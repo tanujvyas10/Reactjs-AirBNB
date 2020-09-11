@@ -1,3 +1,25 @@
+.header{
+    display:flex;
+justify-content: space-between;
+top:0;
+background-color: #ffffff;
+align-items: center;
+position: sticky;
+z-index: 10;
+widows: 100%;
+}
 .logo{
+    object-fit: contain;
     width: 150px;
+    margin-left:20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    display:flex;
+    align-items: center;
 }
