@@ -4,6 +4,7 @@ justify-content: space-between;
 top:0;
 background-color: #ffffff;
 align-items: center;
+padding:10px;
 position: sticky;
 z-index: 10;
 widows: 100%;
@@ -17,6 +18,18 @@ widows: 100%;
 .center{
     display: flex;
     align-items: center;
+    max-width: fit-content;
+    padding:10px;
+    height:30px;
+    border-radius: 999px;;
+    border:1px solid #383232;
+}
+
+.center > input{
+    border:none;
+    /* width:250px; */
+    padding:10px;
+    outline-width: 0;
 }
 
 .right{
