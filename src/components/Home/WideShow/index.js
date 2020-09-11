@@ -9,8 +9,17 @@ const Wideshow = () => {
     return (
         <div className = "wideshow">
         <div className = "search">
-        {showSearch && <Search/> }
-        <Button onClick = {()=>setShowSearch(!showSearch)} variant = "outlined">Search Dates</Button>
+        {showSearch && <Search/>}
+        <Button 
+        className = "search_button"
+        onClick = {()=>setShowSearch(!showSearch)} 
+        variant = "outlined">{
+            showSearch ?
+            <span>Hide</span>            
+            :
+
+            <span>Search Dates</span>
+        }</Button>
         </div>
         <div className = "heading">
         <h1>Explore the world! Enjoy the life!</h1>
