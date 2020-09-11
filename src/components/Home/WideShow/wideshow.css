@@ -8,8 +8,26 @@
     background-color: #000000;
     color:white;
     width:300px;
-    padding-top:25vh;
+    padding-top:7vh;
     padding-left:50px;
     padding-right:50px;
     padding-bottom:40px;
+}
+
+.heading > button{
+    background-color: #ff7779;
+    color:white;
+    text-transform: inherit;
+    margin-top:20px;
+    font-weight: 500;
+
+}
+
+.heading > h4{
+ margin-top: 10px;   
+}
+
+.heading > button:hover{
+    background-color: white;
+    color:#ff7779;
 }
