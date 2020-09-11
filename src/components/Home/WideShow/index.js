@@ -1,9 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './wideshow.css'
 import {Button} from '@material-ui/core'
-const index = () => {
+import Search from '../Search'
+const Wideshow = () => {
+
+    const [showSearch,setShowSearch] = useState(false)
+
     return (
         <div className = "wideshow">
+        <div className = "search">
+        {showSearch && <Search/> }
+        <Button onClick = {()=>setShowSearch(!showSearch)} variant = "outlined">Search Dates</Button>
+        </div>
         <div className = "heading">
         <h1>Explore the world! Enjoy the life!</h1>
         <h4>Plan a different kind of gateway to uncover the hidden gems near you</h4>
@@ -14,4 +22,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Wideshow

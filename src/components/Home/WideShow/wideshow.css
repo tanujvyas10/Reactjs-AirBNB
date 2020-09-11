@@ -22,7 +22,16 @@
     font-weight: 500;
 
 }
-
+.search{
+    display: flex;
+    flex-direction: column;
+}
+.search > button{
+    background-color: white !important;
+    font-weight: 800 !important;
+    text-transform: inherit !important;
+    color:#ff7779 !important;
+}
 .heading > h4{
  margin-top: 10px;   
 }
@@ -30,4 +39,5 @@
 .heading > button:hover{
     background-color: white;
     color:#ff7779;
+    font-weight: 500;
 }
