@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import WideShow from './WideShow'
 import './main.css'
 import data from './card-data'
-import {data2 } from './card-data-2'
+import data2 from './card-data-2'
 import Card from './Card'
 const Home = () => {
 
@@ -12,7 +12,6 @@ const Home = () => {
         
     },[])
 
-console.log("---",data)
     return (
         <div className = 'home'>
         <WideShow/>
@@ -24,9 +23,11 @@ console.log("---",data)
   }
         </div>
         <div className= "section">
-        <Card/>
-        <Card/>
-        <Card/>
+        {
+            data2.map((el)=>{
+                return <Card title = {el.title} src= {el.src} description = {el.description} price = {el.price}/>
+            })
+        }
         </div>
         <div className= "section">
         <Card/>
