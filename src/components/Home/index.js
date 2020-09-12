@@ -29,11 +29,7 @@ const Home = () => {
             })
         }
         </div>
-        <div className= "section">
-        <Card/>
-        <Card/>
-        <Card/>
-        </div>
+       
             </div>
     )
 }
