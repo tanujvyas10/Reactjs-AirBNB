@@ -1,7 +1,7 @@
 # About the project
 
 This is a Frontend design of Airbnb(inspired from airbnb clone of clever-programmers).
-# Tech Stack used
+# Tech Stack used are:-
 
 * Reactjs
 * CSS
